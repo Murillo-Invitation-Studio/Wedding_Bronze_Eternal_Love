@@ -1,0 +1,105 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  text-align: center;
+  background: #e4e4e4;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.Imagen_Cabezera {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #000;
+}
+.Imagen_Cabezera .foto-portada {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: scale(1);
+  animation: zoomPortada 25s ease-in-out infinite alternate;
+}
+.Imagen_Cabezera .overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 20%, rgba(0, 0, 0, 0.4) 40%, rgba(0, 0, 0, 0.6) 60%, rgba(0, 0, 0, 0.8) 80%, rgb(0, 0, 0) 100%);
+}
+
+.Titulo_Cabezera {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  z-index: 5;
+}
+.Titulo_Cabezera h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 45px;
+  text-shadow: 4px 4px 0 #000;
+  white-space: nowrap;
+  margin: 0;
+}
+.Titulo_Cabezera p {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+  text-shadow: 4px 4px 0 #000;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.scroll-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+  z-index: 3;
+  margin-top: 50px;
+  margin-bottom: 0;
+  font-size: 10px;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 1s;
+}
+.scroll-indicator span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin-top: 0;
+  border-bottom: 4px solid #fff;
+  border-right: 4px solid #fff;
+  transform: rotate(45deg);
+  animation: scrollAnim 1.8s infinite;
+  opacity: 0.8;
+}
+.scroll-indicator span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+@media (min-width: 901px) {
+  .Imagen_Cabezera {
+    height: 100vh;
+  }
+  .Imagen_Cabezera .foto-portada {
+    -o-object-position: center 20%;
+       object-position: center 20%;
+    transform: none;
+    animation: none;
+  }
+}
+@keyframes scrollAnim {
+  0% {
+    transform: rotate(45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(45deg) translate(5px, 5px);
+    opacity: 0;
+  }
+}/*# sourceMappingURL=design.css.map */

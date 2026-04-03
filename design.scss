@@ -1,0 +1,154 @@
+//====================================================
+//  Variables
+//====================================================
+$font-titulos: 'Great Vibes', cursive;
+$font-texto: 'Cormorant Garamond', serif;
+
+$size-titulos: 45px;
+$size-texto: 25px;
+$size-boton: 20px;
+
+$color-grisclaro: #e4e4e4;
+$color-blanco: #fff;
+$color-negro: #000;
+
+$shadow-titulo-pc: 4px 4px 0 $color-negro;
+$shadow-titulo-movil: 3px 3px 0 $color-negro;
+
+//====================================================
+//  Cuerpo de la pagina
+//====================================================
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    text-align: center;
+    background: $color-grisclaro;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+//====================================================
+//  Imagen de portada
+//====================================================
+.Imagen_Cabezera{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background-color: $color-negro;
+
+    .foto-portada{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: scale(1);
+        animation: zoomPortada 25s ease-in-out infinite alternate;
+    }
+    
+    .overlay{
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+            to bottom,
+            rgba(0,0,0,0.2) 20%,
+            rgba(0,0,0,0.4) 40%,
+            rgba(0,0,0,0.6) 60%,
+            rgba(0,0,0,0.8) 80%,
+            rgba(0,0,0,1) 100%
+        );
+    }
+}
+
+// ================================================
+// Nombre de los novios de portada
+// ================================================
+.Titulo_Cabezera{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $color-blanco;
+    text-align: center;
+    z-index: 5;
+        
+    h1{
+        font-family: $font-titulos;
+        font-size: $size-titulos;
+        text-shadow: $shadow-titulo-pc;
+        white-space: nowrap;
+        margin: 0;
+    }
+
+    p{
+        font-family: $font-texto;
+        font-size: $size-texto;
+        text-shadow: $shadow-titulo-pc;
+        white-space: nowrap;
+        margin: 0;
+    }
+}
+
+// ================================================
+// Scroll indicador
+// ================================================
+.scroll-indicator{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    z-index: 3;
+    margin-top: 50px;
+    margin-bottom: 0;
+    font-size: 10px;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 1s;
+
+    span{
+        display: block;
+        width: 10px;
+        height: 10px;
+        margin-top: 0;
+        border-bottom: 4px solid $color-blanco;
+        border-right: 4px solid $color-blanco;
+        transform: rotate(45deg);
+        animation: scrollAnim 1.8s infinite;
+        opacity: 0.8;
+
+        &:nth-child(2) {
+        animation-delay: 0.2s;
+        }
+    }
+}
+
+//====================================================
+//  Ayudas visuales para PC
+//====================================================
+@media (min-width: 901px){
+    .Imagen_Cabezera{
+        height: 100vh;
+
+        .foto-portada{
+            object-position: center 20%;
+            transform: none;
+            animation: none;
+        }
+    }
+}
+
+//====================================================
+//  Animaciones
+//====================================================
+@keyframes scrollAnim{
+    0%{
+        transform: rotate(45deg) translate(0, 0);
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(45deg) translate(5px, 5px);
+        opacity: 0;
+    }
+}
