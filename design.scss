@@ -8,7 +8,15 @@ $size-titulos: 45px;
 $size-texto: 25px;
 $size-boton: 20px;
 
-$color-grisclaro: #e4e4e4;
+$color-grisclaro: #0c0909;
+$color-blancomarfil: #f8f5f0;
+$color-beigedorado: #F7E7CE;
+$color-doradosuave: #CBA135;
+$color-rosaclaro: #fce4ec;
+$color-rosapalo: #D8A7B1;
+$color-verdeolivo: #A3B18A;
+$color-azulnoche: #1B263B;
+$color-dorado: #D4AF37;
 $color-blanco: #fff;
 $color-negro: #000;
 
@@ -22,7 +30,7 @@ body{
     font-family: Arial, sans-serif;
     margin: 0;
     text-align: center;
-    background: $color-grisclaro;
+    background: $color-blancomarfil;
     padding-left: 0px;
     padding-right: 0px;
 }
