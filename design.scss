@@ -165,17 +165,13 @@ body{
             margin: 25px;
         }
 
-        h3{
+        h3,
+        p{
             font-family: $font-texto;
             font-size: $size-texto;
             margin: 5px;
         }
 
-        p{
-            font-family: $font-texto;
-            font-size: $size-texto;
-            margin: 0;
-        }
     }
 }
 
@@ -204,12 +200,7 @@ body{
         align-items: center;
         gap: 10px;
 
-        h2{
-            font-family: $font-texto;
-            font-size: $size-texto;
-            margin: 0;
-        }
-
+        h2,
         p{
             font-family: $font-texto;
             font-size: $size-texto;

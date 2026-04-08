@@ -115,15 +115,11 @@ body {
   font-size: 25px;
   margin: 25px;
 }
-.Presentacion .Mensaje_de_los_novios h3 {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 25px;
-  margin: 5px;
-}
+.Presentacion .Mensaje_de_los_novios h3,
 .Presentacion .Mensaje_de_los_novios p {
   font-family: "Cormorant Garamond", serif;
   font-size: 25px;
-  margin: 0;
+  margin: 5px;
 }
 
 .Padres {
@@ -148,12 +144,8 @@ body {
   gap: 10px;
 }
 .Padres .Padres_Novio h2,
-.Padres .Padres_Novia h2 {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 25px;
-  margin: 0;
-}
 .Padres .Padres_Novio p,
+.Padres .Padres_Novia h2,
 .Padres .Padres_Novia p {
   font-family: "Cormorant Garamond", serif;
   font-size: 25px;
