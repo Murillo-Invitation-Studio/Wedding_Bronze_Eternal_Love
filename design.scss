@@ -120,6 +120,9 @@ body{
     }
 }
 
+// ================================================
+// Frase inicial de la invitacion
+// ================================================
 .Frase1{
     padding: 0;
     text-align: center;
@@ -130,6 +133,9 @@ body{
     }
 }
 
+// ================================================
+// Presentacion de los novios y mensaje
+// ================================================
 .Presentacion{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -173,6 +179,9 @@ body{
     }
 }
 
+// ================================================
+// Padres de los novios
+// ================================================
 .Padres{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -210,6 +219,130 @@ body{
 
     .Padres_Novia{
         margin-top: 200px; // espacio entre secciones
+    }
+}
+
+// ================================================
+// Detalles del evento
+// ================================================
+.Detalles_Evento{
+    text-align: center;
+
+    h2{
+        font-family: $font-texto;
+        font-size: $size-texto;
+        margin: 0 auto 40px;
+    }
+
+    .Evento{
+        background: $color-blanco;
+        padding: 40px;
+        margin: 0 auto 30px;
+        max-width: 300px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+
+        h3{
+            font-family: $font-texto;
+            font-size: $size-texto;
+            margin: 0 0 20px;
+        }
+
+        h4{
+            font-family: $font-texto, bold;
+            font-size: $size-texto;
+            margin: 0 0 30px;
+        }
+
+        h5{
+            font-family: $font-texto, italic;
+            font-size: $size-texto;
+            margin: 0;
+        }
+
+        p{
+            font-family: $font-texto;
+            font-size: $size-texto;
+            margin: 0 0 10px;
+        }
+
+        .Imagen_Ceremonia,
+        .Imagen_Recepcion{
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            margin: 20px auto 30px;
+            box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.8);
+        }
+    }
+}
+
+//====================================================
+//  Confirmacion de asistencia
+//====================================================
+.Confirmacion{
+    text-align: center;
+
+    h2{
+        font-family: $font-texto;
+        font-size: $size-texto;
+        margin: 0 auto 40px;
+    }
+
+    p{
+        font-family: $font-texto;
+        font-size: $size-texto;
+        margin: 0 0 10px;
+    }
+
+    .FotoPlantilla3{
+        width: 100%;
+        max-width: 380px;
+        height: auto;
+        margin: 0 auto 30px;
+        box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.8);
+    }
+}
+
+//====================================================
+//  Regalos
+//====================================================
+.Pie_de_pagina{
+    text-align: center;
+    background-color: $color-negro;
+    color: $color-blanco;
+    padding: 1px;
+    margin-top: 25px;
+
+    p{
+        font-size: 15px;
+    }
+}
+
+//====================================================
+//  Botones (Todos)
+//====================================================
+.botonWhatsapp,
+.boton {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-family: $font-texto;
+    font-size: $size-boton;
+    background: #111;
+    color: $color-blanco;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.55);
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+
+    &:hover {
+        background: #333;
+    }
+
+    &:active {
+        transform: scale(0.97);
     }
 }
 

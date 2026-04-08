@@ -163,6 +163,107 @@ body {
   margin-top: 200px;
 }
 
+.Detalles_Evento {
+  text-align: center;
+}
+.Detalles_Evento h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+  margin: 0 auto 40px;
+}
+.Detalles_Evento .Evento {
+  background: #fff;
+  padding: 40px;
+  margin: 0 auto 30px;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+.Detalles_Evento .Evento h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+  margin: 0 0 20px;
+}
+.Detalles_Evento .Evento h4 {
+  font-family: "Cormorant Garamond", serif, bold;
+  font-size: 25px;
+  margin: 0 0 30px;
+}
+.Detalles_Evento .Evento h5 {
+  font-family: "Cormorant Garamond", serif, italic;
+  font-size: 25px;
+  margin: 0;
+}
+.Detalles_Evento .Evento p {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+  margin: 0 0 10px;
+}
+.Detalles_Evento .Evento .Imagen_Ceremonia,
+.Detalles_Evento .Evento .Imagen_Recepcion {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  margin: 20px auto 30px;
+  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.8);
+}
+
+.Confirmacion {
+  text-align: center;
+}
+.Confirmacion h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+  margin: 0 auto 40px;
+}
+.Confirmacion p {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+  margin: 0 0 10px;
+}
+.Confirmacion .FotoPlantilla3 {
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  margin: 0 auto 30px;
+  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.8);
+}
+
+.Pie_de_pagina {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  padding: 1px;
+  margin-top: 25px;
+}
+.Pie_de_pagina p {
+  font-size: 15px;
+}
+
+.botonWhatsapp,
+.boton {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 20px;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.55);
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+.botonWhatsapp:hover,
+.boton:hover {
+  background: #333;
+}
+.botonWhatsapp:active,
+.boton:active {
+  transform: scale(0.97);
+}
+
 .divisor {
   display: flex;
   align-items: center;
